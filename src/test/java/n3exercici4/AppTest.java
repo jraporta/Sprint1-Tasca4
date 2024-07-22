@@ -7,7 +7,7 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 
-public class appTest {
+public class AppTest {
 	
 	@Test
 	public void test() {

@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.lang.ArrayIndexOutOfBoundsException;
 
-public class SetmanaTest {
+public class ExempleTest {
 
 	@DisplayName( value = ("verifica ArrayIndexOutOfBoundsException"))
 	@Test
@@ -16,9 +16,8 @@ public class SetmanaTest {
 		
 		Executable executable = new Executable() {
 			@Override
-			public void execute() throws Throwable {
-				Setmana setmana = new Setmana();
-				setmana.getDiaSetmana(setmana.size() + 1);
+			public void execute() {
+				Exemple.throwException();
 			}
 			
 		};

@@ -1,5 +1,6 @@
 package n1exercici1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -8,22 +9,22 @@ import java.util.List;
  */
 public class Mes {
     
-	public static List<String> creaLlistaMesos(List<String> template){
-    	template.clear();
+	public static List<String> creaLlistaMesos(){
+    	List<String> list = new ArrayList<String>();
     	
-    	template.add("gener");
-    	template.add("febrer");
-    	template.add("març");
-    	template.add("abril");
-    	template.add("maig");
-    	template.add("juny");
-    	template.add("juliol");
-    	template.add("agost");
-    	template.add("septembre");
-    	template.add("octubre");
-    	template.add("novembre");
-    	template.add("desembre");
+    	list.add("gener");
+    	list.add("febrer");
+    	list.add("març");
+    	list.add("abril");
+    	list.add("maig");
+    	list.add("juny");
+    	list.add("juliol");
+    	list.add("agost");
+    	list.add("septembre");
+    	list.add("octubre");
+    	list.add("novembre");
+    	list.add("desembre");
     	
-    	return template;
+    	return list;
     }
 }

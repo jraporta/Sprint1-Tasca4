@@ -7,10 +7,13 @@ public class MyTest {
 	
 
 	@Test
-	public void test() {
+	public void intEqualitytest() {
 		assertThat(3).isEqualTo(3);
+	}
+	
+	@Test
+	public void intInequalityTest() {
 		assertThat(10).isNotEqualTo(2);
-		
 	}
 	
 	

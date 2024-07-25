@@ -9,7 +9,7 @@ public class MyTest {
 	
 	@DisplayName(value = "comprova null")
 	@Test
-	public void test() {
+	public void assertObjectIsNullTest() {
 		Object object = null;
 		assertThat(object).isNull();
 	}

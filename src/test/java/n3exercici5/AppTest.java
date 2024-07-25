@@ -14,7 +14,7 @@ import java.util.Map;
 public class AppTest {
 	
 	@Test
-	public void test() {
+	public void mapContainsKeyTest() {
 		Map<String, String> myMap = new HashMap<String,String>();
 		myMap.put("Maria", "12345");
 		myMap.put("Jordi", "54321");

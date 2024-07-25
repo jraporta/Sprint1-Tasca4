@@ -6,16 +6,20 @@ import static org.assertj.core.api.Assertions.*;
 
 
 public class myTest {
-
-	@DisplayName(value = "Testos de referències")
+	
+	private Object object1 = new Object();
+	private Object object2 = new Object();
+	private Object object3 = object1;
+	
+	@DisplayName(value = "Comparem les referències de objectes")
 	@Test
-	public void test() {
-		Object object1 = new Object();
-		Object object2 = new Object();
-		Object object3 = object1;
-		
-		
+	public void objectsAreNotTheSameTest() {
 		assertThat(object1).isNotSameAs(object2);
+	}
+	
+	@DisplayName(value = "Comparem les referències de objectes")
+	@Test
+	public void objectsAreTheSameTest() {
 		assertThat(object1).isSameAs(object3);
 	}
 }
